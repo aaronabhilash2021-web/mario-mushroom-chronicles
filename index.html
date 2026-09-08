@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Super Mario: Mushroom Chronicles 2D</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game-container">
+    <canvas id="gameCanvas" width="640" height="480"></canvas>
+    
+    <div id="hud">
+      <span id="health-display" class="hud-pill" style="color: #ff4757; font-weight: bold;">❤❤❤</span>
+      <span class="hud-pill">[Shift] Sprint</span>
+      <span class="hud-pill">[F] Fireball</span>
+      <span class="hud-pill">[E] Interact</span>
+    </div>
+
+    <div id="interaction-prompt" class="hidden">[E] Interact</div>
+
+    <div id="dialogue-box" class="hidden">
+      <div id="speaker-name">Name</div>
+      <div id="dialogue-text">...</div>
+      <div id="choices-container"></div>
+      <div id="dialogue-footer">Press [Space] or [E] to continue</div>
+    </div>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
